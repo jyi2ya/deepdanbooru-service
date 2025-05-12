@@ -1,0 +1,12 @@
+[Unit]
+Description=Danbooru Tagging Service
+After=network.target
+
+[Service]
+User=jyi
+WorkingDirectory=/srv/deepdanbooru
+EnvironmentFile=/srv/deepdanbooru/settings
+ExecStart=/srv/deepdanbooru/venv/bin/python3 -mgunicorn -b ${HOST}:${PORT} main:app
+
+[Install]
+WantedBy=multi-user.target

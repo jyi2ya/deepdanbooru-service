@@ -1,0 +1,4 @@
+DANBOORU_MODEL_PATH=./deepdanbooru/deepdanbooru.onnx
+DANBOORU_TAGS_PATH=./deepdanbooru/tags.txt
+HOST=0.0.0.0
+PORT=11451
